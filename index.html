@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Cachets Pro Lomé</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Wonder Services</div>
+    <nav>
+        <a href="#">Accueil</a>
+        <a href="#">Services</a>
+        <a href="#">Commande</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Cachets personnalisés professionnels</h1>
+    <p>Livraison rapide à Lomé en 24h 🚀</p>
+    <button onclick="scrollToForm()">Commander maintenant</button>
+</section>
+
+<section class="services">
+    <div class="card">Cachet simple</div>
+    <div class="card">Cachet entreprise</div>
+    <div class="card">Cachet avec logo</div>
+</section>
+
+<section class="form-section" id="form">
+    <h2>Commander votre cachet</h2>
+
+    <form id="commandeForm">
+        <input type="text" id="nom" placeholder="Nom complet" required>
+        <input type="tel" id="telephone" placeholder="Téléphone" required>
+
+        <select id="type">
+            <option>Cachet simple</option>
+            <option>Cachet professionnel</option>
+            <option>Cachet avec logo</option>
+        </select>
+
+        <textarea id="texte" placeholder="Texte du cachet"></textarea>
+
+        <!-- Upload logo -->
+        <input type="file" id="logo" accept="image/*">
+
+        <button type="submit">Envoyer la commande</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 CachetsPro - Lomé</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
